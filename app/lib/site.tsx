@@ -4,7 +4,7 @@ export const siteDetails = {
 	tagline:
 		'Frontend Engineer | React.js | Next.js | JavaScript | TypeScript | Redux | Redux Toolkit',
 	email: 'albinjiji3@gmail.com',
-	phone: '+91-7012017994',
+	phone: '+91-9207603364',
 	linkedin: 'https://www.linkedin.com/in/albinjiji/',
     gitHub: 'https://github.com/albinjiji',
 	resumeUrl: '/Albin-Jiji-Resume.pdf',
