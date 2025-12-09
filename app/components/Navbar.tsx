@@ -2,15 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { siteDetails } from "../lib/site";
+import { navValues } from "../constants/constants";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
-  { href: "#contact", label: "Contact" },
+  { href: "#home", label: navValues.home },
+  { href: "#about", label: navValues.about },
+  { href: "#skills", label: navValues.skills },
+  { href: "#experience", label: navValues.experience },
+  { href: "#projects", label: navValues.projects },
+  { href: "#education", label: navValues.education },
+  { href: "#contact", label: navValues.contact },
 ];
 
 export default function Navbar() {
@@ -28,7 +30,7 @@ export default function Navbar() {
             href="#home"
             className="text-sm font-semibold tracking-[0.16em] leading-tight uppercase"
           >
-            <div>Albin Jiji</div>
+            <div>{siteDetails.name}</div>
           </Link>
 
           {/* Desktop Links */}
@@ -81,8 +83,7 @@ export default function Navbar() {
           {/* Slide-in menu */}
           <aside className="absolute right-0 top-0 h-full w-64 bg-[rgb(5,8,20)] border-l border-neutral-800 p-6 flex flex-col gap-6">
             <div className="text-sm font-semibold tracking-[0.16em] leading-tight uppercase text-[color:var(--accent)]">
-              <div>Albin</div>
-              <div>Jiji</div>
+              <div>{siteDetails.name}</div>
             </div>
 
             <nav className="flex flex-col gap-4 mt-2">

@@ -1,5 +1,6 @@
 import Section from './Section';
 import { siteDetails } from '../lib/site';
+import { skillValues } from '../constants/constants';
 
 function SkillGroup({ title, items }: { title: string; items: string[] }) {
 	return (
@@ -21,10 +22,10 @@ export default function Skills() {
 	return (
 		<Section id="skills" title="Skills">
 			<div className="grid gap-4 sm:gap-5 md:grid-cols-2">
-				<SkillGroup title="Frontend" items={skills.frontend} />
-				<SkillGroup title="Backend" items={skills.backend} />
-				<SkillGroup title="Core Competencies" items={skills.core} />
-				<SkillGroup title="Software & Tools" items={skills.tools} />
+				<SkillGroup title={skillValues.frontend} items={skills.frontend} />
+				<SkillGroup title={skillValues.backend} items={skills.backend} />
+				<SkillGroup title={skillValues.coreCompetencies} items={skills.core} />
+				<SkillGroup title={skillValues.softwareAndTools} items={skills.tools} />
 			</div>
 		</Section>
 	);

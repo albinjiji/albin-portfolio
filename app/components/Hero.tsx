@@ -1,3 +1,4 @@
+import { contactValues } from '../constants/constants';
 import { siteDetails } from '../lib/site';
 
 export default function Hero() {
@@ -18,7 +19,7 @@ export default function Hero() {
 					</p>
 					<div className="mt-7 flex flex-wrap gap-4">
 						<a href={`mailto:${siteDetails.email}`} className="btn-primary">
-							Email me
+							{contactValues.emailMe}
 						</a>
 						<a
 							href={siteDetails.resumeUrl}
@@ -26,7 +27,7 @@ export default function Hero() {
 							rel="noreferrer"
 							className="btn-secondary"
 						>
-							My resume
+							{contactValues.resume}
 						</a>
 					</div>
 				</div>

@@ -16,10 +16,10 @@ export default function Contact() {
 				</div>
 				<div className="flex flex-wrap gap-3">
 					<a className="btn-secondary" href={mailto}>
-						Email me
+						{contactValues.email}
 					</a>
 					<a className="btn-secondary" href={tel}>
-						Call
+						{contactValues.call}
 					</a>
 					<a
 						className="btn-secondary"
@@ -27,7 +27,7 @@ export default function Contact() {
 						rel="noreferrer"
 						href={siteDetails.linkedin}
 					>
-						LinkedIn
+						{contactValues.linkedIn}
 					</a>
                     <a
 						className="btn-secondary"
@@ -35,7 +35,7 @@ export default function Contact() {
 						rel="noreferrer"
 						href={siteDetails.gitHub}
 					>
-						GitHub
+						{contactValues.gitHub}
 					</a>
 				</div>
 			</div>
