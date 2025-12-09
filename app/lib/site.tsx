@@ -1,4 +1,4 @@
-export const site = {
+export const siteDetails = {
 	name: 'Albin Jiji',
 	title: 'Senior Software Engineer',
 	tagline:
@@ -7,15 +7,19 @@ export const site = {
 	phone: '+91-7012017994',
 	linkedin: 'https://www.linkedin.com/in/albinjiji/',
     gitHub: 'https://github.com/albinjiji',
-	resumeUrl: '/-Resume.pdf',
+	resumeUrl: '/Albin-Jiji-Resume.pdf',
 	skillsStrip: ['HTML5', 'CSS', 'Javascript', 'Node.js', 'React', 'Git', 'Github'],
 	about:
-		"Passionate and results-driven Frontend Developer with 3+ years of experience building high-performance web and mobile applications. I specialize in developing scalable, responsive, and intuitive user interfaces using React.js, Next.js, TypeScript, Redux Toolkit, and JavaScript, ensuring exceptional user experiences and optimized performance. Skilled in Next.js SSR/SSG, state management, API integration, and UI performance tuning, with a strong focus on modular architecture and code maintainability. I collaborate closely with cross-functional teams to translate product requirements into elegant, production-ready solutions that drive business value. Holding a Master's in Computer Application (MCA), I bring a solid grounding in software engineering principles, paired with practical expertise in modern frontend frameworks, testing, and CI/CD workflows. I'm passionate about crafting impactful digital experiences and continuously evolving with emerging web technologies. Always open to connecting with engineering leaders, recruiters, and teams working on innovative, user-focused products.",
+		`Frontend Developer with 3+ years of experience building high-performance web applications using React.js, Next.js, TypeScript, and Redux Toolkit. I focus on creating scalable, intuitive, and responsive interfaces with clean architecture and exceptional user experience.
+
+		Skilled in React.js component architecture, Next.js routing and optimization, state management, API integration, and UI performance tuning. I collaborate closely with cross-functional teams to deliver reliable, production-ready solutions that add real business value.
+
+		With a Master's in Computer Applications (MCA), I bring strong engineering fundamentals along with practical experience in modern frontend technologies. I'm passionate about building impactful digital products and continuously expanding my expertise in the evolving web ecosystem.`,
 	skills: {
 		frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux', 'Next.js', 'Redux Toolkit', 'TypeScript'],
 		backend: [
-			'Node.js(Beginner)',
-			'Python(Beginner)'
+			'Node.js(Basic)',
+			'Python(Basic)'
 		],
 		core: [
             'Data Structures & Algorithms',
@@ -91,4 +95,4 @@ export const site = {
 	]
 };
 
-export type Site = typeof site;
+export type Site = typeof siteDetails;

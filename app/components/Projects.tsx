@@ -1,4 +1,4 @@
-import { site } from '../lib/site';
+import { siteDetails } from '../lib/site';
 import Section from './Section';
 import CardItem from './CardItem';
 
@@ -7,7 +7,7 @@ export default function Projects() {
       <Section id="projects" title="Projects">
         <div className="relative">
           <ol className="space-y-5 pl-2">
-            {site.projects.map((project, idx) => (
+            {siteDetails.projects.map((project, idx) => (
               <CardItem
                 key={idx}
                 links={project.links}

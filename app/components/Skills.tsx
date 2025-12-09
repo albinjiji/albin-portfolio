@@ -1,5 +1,5 @@
 import Section from './Section';
-import { site } from '../lib/site';
+import { siteDetails } from '../lib/site';
 
 function SkillGroup({ title, items }: { title: string; items: string[] }) {
 	return (
@@ -17,14 +17,14 @@ function SkillGroup({ title, items }: { title: string; items: string[] }) {
 }
 
 export default function Skills() {
-	const { skills } = site;
+	const { skills } = siteDetails;
 	return (
 		<Section id="skills" title="Skills">
 			<div className="grid gap-4 sm:gap-5 md:grid-cols-2">
 				<SkillGroup title="Frontend" items={skills.frontend} />
 				<SkillGroup title="Backend" items={skills.backend} />
-				<SkillGroup title="Protocols" items={skills.core} />
-				<SkillGroup title="Core Competencies" items={skills.tools} />
+				<SkillGroup title="Core Competencies" items={skills.core} />
+				<SkillGroup title="Software & Tools" items={skills.tools} />
 			</div>
 		</Section>
 	);

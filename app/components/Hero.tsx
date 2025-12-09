@@ -1,4 +1,4 @@
-import { site } from '../lib/site';
+import { siteDetails } from '../lib/site';
 
 export default function Hero() {
 	return (
@@ -9,19 +9,19 @@ export default function Hero() {
 						<span className="text-accent text-base font-semibold">Hello.</span>
 						<span className="w-1.5 h-1.5 rounded-full bg-[color:var(--accent)]" />
 					</div>
-					<p className="mt-3 text-xl text-muted">I&apos;m {site.name}</p>
+					<p className="mt-3 text-xl text-muted">I&apos;m {siteDetails.name}</p>
 					<h1 className="mt-1 text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-						{site.title}
+						{siteDetails.title}
 					</h1>
 					<p className="mt-3 text-lg sm:text-xl text-muted max-w-xl">
-						{site.tagline}
+						{siteDetails.tagline}
 					</p>
 					<div className="mt-7 flex flex-wrap gap-4">
-						<a href={`mailto:${site.email}`} className="btn-primary">
+						<a href={`mailto:${siteDetails.email}`} className="btn-primary">
 							Email me
 						</a>
 						<a
-							href={site.resumeUrl}
+							href={siteDetails.resumeUrl}
 							target="_blank"
 							rel="noreferrer"
 							className="btn-secondary"
