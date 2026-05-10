@@ -26,7 +26,7 @@ export default function Experience() {
 
   return (
     <Section id="experience" eyebrow="03 — Experience" title="Where I've worked">
-      <div className="grid gap-8 md:grid-cols-[260px_1fr]">
+      <div className="grid w-full gap-8 md:grid-cols-[260px_1fr]">
         <motion.div
           className="md:sticky md:top-28 md:self-start"
           initial={{ opacity: 0, x: -20 }}
@@ -34,7 +34,7 @@ export default function Experience() {
           viewport={viewportOnce}
           transition={{ duration: duration.lg, ease: ease.outExpo }}
         >
-          <ul className="relative flex md:flex-col gap-1 overflow-x-auto md:overflow-visible">
+          <ul className="relative flex w-full md:flex-col gap-1 overflow-x-auto md:overflow-visible pb-1 md:pb-0">
             <span
               className="absolute left-0 top-0 hidden h-full w-px md:block"
               style={{ background: "var(--border)" }}
@@ -46,7 +46,7 @@ export default function Experience() {
                   <button
                     type="button"
                     onClick={() => setActive(i)}
-                    className="relative w-full whitespace-nowrap px-3 py-2 sm:px-4 sm:py-3 text-left transition-colors"
+                    className="relative w-full md:whitespace-nowrap px-3 py-2 sm:px-4 sm:py-3 text-left transition-colors"
                     style={{
                       color: isActive ? "var(--accent)" : "var(--muted)",
                     }}
