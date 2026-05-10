@@ -71,9 +71,9 @@ export const siteDetails = {
         {
             name: 'InsightCoder - AI-Powered Coding Assistant',
             description: [
-                'Developed an AI-based web app using Next.js, TypeScript, Redux Toolkit, and Tailwind CSS to help developers write, debug, and understand code.',
-                'Integrated the Google Gemini API for intelligent code explanations and context-aware responses.',
-                'Designed a responsive UI with reusable React components and managed state using RTK Query'
+                'Built an AI-powered coding platform with 6 intelligent modes (Debug, Review, Explain, Tests, Chat, Repo Q&A) to streamline developer workflows, integrating LLM-powered features using Gemini API to improve debugging and code understanding.',
+                'Implemented secure authentication and backend integration using Supabase (PostgreSQL, RLS, OAuth), and designed a responsive, seamless UI using Tailwind CSS across devices.',
+                'Next.js · TypeScript · Redux Toolkit · Google Gemini · Supabase · Monaco Editor'
                 ],
             links: [
                 {label: 'GitHub', url: 'https://github.com/albinjiji/Insight-Coder'},
