@@ -82,11 +82,11 @@ function ProjectCard({
             className="absolute inset-0 grid-bg opacity-50"
             aria-hidden
           />
-          <div className="relative flex h-full items-center justify-center p-10">
+          <div className="relative flex h-full items-center justify-center p-5 sm:p-10">
             <div className="font-mono text-xs uppercase tracking-[0.3em] text-muted">
               <div className="mb-2">{`> npm run`}</div>
               <div
-                className="text-3xl normal-case tracking-normal"
+                className="text-2xl sm:text-3xl normal-case tracking-normal"
                 style={{
                   fontFamily: "var(--font-display), sans-serif",
                   letterSpacing: "-0.02em",
@@ -105,7 +105,7 @@ function ProjectCard({
           </div>
         </div>
 
-        <div className="relative p-7 md:p-8">
+        <div className="relative p-5 sm:p-7 md:p-8">
           <h3 className="text-lg md:text-xl font-semibold leading-tight">
             {name}
           </h3>

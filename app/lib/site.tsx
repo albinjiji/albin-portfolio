@@ -10,7 +10,7 @@ export const siteDetails = {
 	resumeUrl: '/Albin-Jiji-Resume.pdf',
 	skillsStrip: ['HTML5', 'CSS', 'Javascript', 'Node.js', 'React', 'Git', 'Github'],
 	about:
-		`Frontend Developer with 3+ years of experience building high-performance web applications using React.js, Next.js, TypeScript, and Redux Toolkit. I focus on creating scalable, intuitive, and responsive interfaces with clean architecture and exceptional user experience.
+		`Frontend Developer with 4+ years of experience building high-performance web applications using React.js, Next.js, TypeScript, and Redux Toolkit. I focus on creating scalable, intuitive, and responsive interfaces with clean architecture and exceptional user experience.
 
 		Skilled in React.js component architecture, Next.js routing and optimization, state management, API integration, and UI performance tuning. I collaborate closely with cross-functional teams to deliver reliable, production-ready solutions that add real business value.
 

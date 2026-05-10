@@ -143,7 +143,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
             />
             <motion.nav
-              className="relative flex h-full flex-col justify-center px-8"
+              className="relative flex h-full flex-col justify-center px-5 sm:px-8"
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -157,7 +157,7 @@ export default function Navbar() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block py-3 text-3xl font-semibold"
+                  className="block py-3 text-2xl sm:text-3xl font-semibold"
                   variants={{
                     hidden: { opacity: 0, x: -30 },
                     show: { opacity: 1, x: 0, transition: { duration: duration.md, ease: ease.outExpo } },

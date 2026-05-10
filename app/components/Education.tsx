@@ -31,13 +31,13 @@ export default function Education() {
           }}
         />
 
-        <ol className="space-y-12">
+        <ol className="space-y-8 md:space-y-12">
           {siteDetails.education.map((ed, i) => {
             const isLeft = i % 2 === 0;
             return (
               <li
                 key={i}
-                className="relative grid md:grid-cols-2 md:gap-12"
+                className="relative grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12"
               >
                 <motion.span
                   aria-hidden
@@ -57,7 +57,7 @@ export default function Education() {
                   }}
                 />
                 <motion.div
-                  className={`card card-gradient-border p-6 md:p-7 ${
+                  className={`card card-gradient-border p-5 sm:p-6 md:p-7 ${
                     isLeft ? "md:col-start-1" : "md:col-start-2"
                   }`}
                   initial={{ opacity: 0, x: isLeft ? -30 : 30, rotateY: isLeft ? 6 : -6 }}

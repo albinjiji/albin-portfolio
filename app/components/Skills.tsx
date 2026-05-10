@@ -26,7 +26,7 @@ function Marquee({ items, reverse = false }: { items: string[]; reverse?: boolea
         {row.map((s, i) => (
           <span
             key={`${s}-${i}`}
-            className="rounded-full border px-4 py-2 text-sm whitespace-nowrap"
+            className="rounded-full border px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm whitespace-nowrap"
             style={{
               borderColor: "var(--border)",
               background: "rgba(255,255,255,0.02)",
@@ -102,7 +102,7 @@ export default function Skills() {
         <Marquee items={rowA} />
         <Marquee items={rowB} reverse />
       </div>
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Group title={skillValues.frontend} items={skills.frontend} />
         <Group title={skillValues.backend} items={skills.backend} />
         <Group title={skillValues.coreCompetencies} items={skills.core} />

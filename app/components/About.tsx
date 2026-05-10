@@ -12,7 +12,7 @@ export default function About() {
     <Section id="about" eyebrow="01 — About" title="About me">
       <div className="grid gap-10 md:grid-cols-[minmax(220px,1fr)_minmax(0,2fr)] md:items-start">
         <motion.div
-          className="relative mx-auto aspect-[4/5] w-full max-w-[280px] overflow-hidden rounded-[var(--radius-xl)]"
+          className="relative mx-auto aspect-[4/5] w-full max-w-[220px] sm:max-w-[280px] overflow-hidden rounded-[var(--radius-xl)]"
           initial={{ opacity: 0, clipPath: "inset(0 0 100% 0)" }}
           whileInView={{ opacity: 1, clipPath: "inset(0 0 0% 0)" }}
           viewport={viewportOnce}
@@ -49,7 +49,7 @@ export default function About() {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <span
-              className="text-[7rem] font-semibold leading-none"
+              className="text-[4rem] sm:text-[5.5rem] md:text-[7rem] font-semibold leading-none"
               style={{
                 fontFamily: "var(--font-display), sans-serif",
                 backgroundImage:
@@ -66,7 +66,7 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          className="card card-gradient-border p-7 md:p-9"
+          className="card card-gradient-border p-5 sm:p-7 md:p-9"
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}

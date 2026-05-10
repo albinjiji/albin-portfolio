@@ -46,7 +46,7 @@ export default function Experience() {
                   <button
                     type="button"
                     onClick={() => setActive(i)}
-                    className="relative w-full whitespace-nowrap px-4 py-3 text-left transition-colors"
+                    className="relative w-full whitespace-nowrap px-3 py-2 sm:px-4 sm:py-3 text-left transition-colors"
                     style={{
                       color: isActive ? "var(--accent)" : "var(--muted)",
                     }}
@@ -68,7 +68,7 @@ export default function Experience() {
           </ul>
         </motion.div>
 
-        <div className="card card-gradient-border p-7 md:p-9">
+        <div className="card card-gradient-border p-5 sm:p-7 md:p-9">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -78,7 +78,7 @@ export default function Experience() {
               transition={{ duration: duration.md, ease: ease.outExpo }}
             >
               <div className="flex flex-wrap items-baseline justify-between gap-3">
-                <h3 className="text-xl md:text-2xl font-semibold">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">
                   {current.role}{" "}
                   <span style={{ color: "var(--accent)" }}>@ {current.company}</span>
                 </h3>

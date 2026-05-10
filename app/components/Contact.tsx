@@ -35,14 +35,14 @@ export default function Contact() {
           transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
         />
 
-        <div className="relative grid gap-10 p-8 md:grid-cols-2 md:p-12">
+        <div className="relative grid gap-8 p-5 sm:p-8 md:grid-cols-2 md:gap-10 md:p-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOnce}
             transition={{ duration: duration.lg, ease: ease.outExpo }}
           >
-            <h3 className="text-3xl md:text-4xl font-semibold leading-tight">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight">
               Let&apos;s build something
               <br />
               <span
@@ -96,7 +96,7 @@ export default function Contact() {
                   href={href}
                   target={external ? "_blank" : undefined}
                   rel={external ? "noreferrer" : undefined}
-                  className="group flex items-center justify-between gap-4 rounded-2xl border px-5 py-4 transition-all"
+                  className="group flex items-center justify-between gap-4 rounded-2xl border px-3 py-3 sm:px-5 sm:py-4 transition-all"
                   style={{
                     borderColor: "var(--border)",
                     background: "rgba(255,255,255,0.015)",

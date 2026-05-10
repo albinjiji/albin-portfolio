@@ -81,7 +81,7 @@ function HeroOrb() {
   }, [mx, my]);
 
   return (
-    <div ref={ref} className="relative flex aspect-square w-full max-w-[420px] items-center justify-center" style={{ perspective: 800 }}>
+    <div ref={ref} className="relative flex aspect-square w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] items-center justify-center" style={{ perspective: 800 }}>
       <motion.div
         style={{ rotateX: srx, rotateY: sry, transformStyle: "preserve-3d" }}
         className="relative h-full w-full"
@@ -152,7 +152,7 @@ export default function Hero() {
       <div className="grid-bg absolute inset-0" aria-hidden />
       <GradientMesh />
 
-      <div className="container-page relative z-10 grid gap-12 md:grid-cols-[minmax(0,1.6fr)_minmax(280px,1fr)] md:items-center">
+      <div className="container-page relative z-10 grid gap-12 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] md:items-center">
         <div>
           <motion.div
             className="mono-label mb-5 flex items-center gap-3"
@@ -181,7 +181,7 @@ export default function Hero() {
             I&apos;m {siteDetails.name}
           </motion.p>
 
-          <h1 className="mt-2 text-5xl sm:text-6xl md:text-7xl font-semibold leading-[0.95]">
+          <h1 className="mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[0.95]">
             <TextReveal
               text="Senior Software"
               mode="char"
@@ -240,7 +240,7 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: duration.md, delay: 1.6 }}
