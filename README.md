@@ -97,6 +97,6 @@ public/
 ---
 
 ## 📬 Contact
-- 📧 albinjiji3@gmail.com
+- 📧 albinjiji8@gmail.com
 - 💼 https://linkedin.com/in/albinjiji
 - 💻 https://github.com/albinjiji
