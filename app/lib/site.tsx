@@ -3,7 +3,7 @@ export const siteDetails = {
 	title: 'Senior Software Engineer',
 	tagline:
 		'Frontend Engineer | React.js | Next.js | JavaScript | TypeScript | Redux | Redux Toolkit',
-	email: 'albinjiji3@gmail.com',
+	email: 'albinjiji8@gmail.com',
 	phone: '+91-9207603364',
 	linkedin: 'https://www.linkedin.com/in/albinjiji/',
     gitHub: 'https://github.com/albinjiji',
@@ -68,6 +68,18 @@ export const siteDetails = {
 		},
 	],
     projects: [
+        {
+            name: 'Field Service Management Platform',
+            description: [
+                'Built a full-stack PWA end-to-end, solo, for a maintenance and service business — replacing manual scheduling and paper-based job tracking with a mobile-first system used daily by field technicians and admin staff.',
+                'Implemented GPS-based clock-in/out for employees, with per-job work sessions tracking start/end time and location, plus offline-tolerant notes and camera photo uploads from the field.',
+                'Built printable, client-ready bill generation per job, and an admin dashboard for employee and job management, work reassignment, and live attendance and active session monitoring.',
+                'Added hours export for payroll and reporting, and push and email notifications via Supabase.',
+                'Shipped as an installable PWA optimized for mid-range Android devices used in the field.',
+                'Next.js (App Router) · TypeScript · Supabase (Auth, Postgres, RLS) · Tailwind CSS · Vercel'
+                ],
+            links: [],
+        },
         {
             name: 'InsightCoder - AI-Powered Coding Assistant',
             description: [

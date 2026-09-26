@@ -1,19 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
-import SmoothScroll from "./components/SmoothScroll";
-import ScrollProgress from "./components/ScrollProgress";
-import Noise from "./components/Noise";
-import Cursor from "./components/Cursor";
-import PageIntro from "./components/PageIntro";
-
-const display = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-display",
-  display: "swap",
-});
 
 const body = Inter({
   subsets: ["latin"],
@@ -34,6 +21,11 @@ export const metadata: Metadata = {
   description:
     "Frontend Engineer skilled in React.js, Next.js, TypeScript, Redux, and Redux Toolkit",
   icons: { icon: "/favicon.svg" },
+  openGraph: {
+    title: "Albin Jiji",
+    description:
+      "Frontend Engineer skilled in React.js, Next.js, TypeScript, Redux, and Redux Toolkit",
+  },
 };
 
 export default function RootLayout({
@@ -42,13 +34,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="en" className={`${body.variable} ${mono.variable}`}>
       <body>
-        <SmoothScroll />
-        <ScrollProgress />
-        <Noise />
-        <Cursor />
-        <PageIntro />
+        <a
+          href="#main"
+          className="fixed left-2 top-2 z-50 -translate-y-16 rounded-md bg-[var(--accent)] px-3 py-2 text-sm text-white transition-transform focus:translate-y-0"
+        >
+          Skip to content
+        </a>
         {children}
       </body>
     </html>
