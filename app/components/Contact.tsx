@@ -25,7 +25,7 @@ export default function Contact() {
       <p className="text-base text-muted">{contactValues.contactMe}</p>
 
       <div className="mt-5 flex items-center gap-2">
-        <a href={mailto} className="text-lg font-medium link-accent">
+        <a href={mailto} className="text-sm font-medium link-accent">
           {siteDetails.email}
         </a>
         <button
