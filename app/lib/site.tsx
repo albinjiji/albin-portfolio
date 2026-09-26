@@ -1,6 +1,6 @@
 export const siteDetails = {
 	name: 'Albin Jiji',
-	title: 'Senior Software Engineer',
+	title: 'Frontend Engineer · React.js, Next.js, TypeScript, Redux Toolkit, Performance Optimization, Component Libraries',
 	tagline:
 		'Frontend Engineer | React.js | Next.js | JavaScript | TypeScript | Redux | Redux Toolkit',
 	email: 'albinjiji8@gmail.com',

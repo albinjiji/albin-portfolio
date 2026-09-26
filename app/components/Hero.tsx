@@ -8,11 +8,11 @@ export default function Hero() {
       <h1 className="text-[clamp(28px,5vw,40px)] font-semibold leading-tight">
         {siteDetails.name}
       </h1>
-      <p className="mt-2 text-base text-muted">{siteDetails.title} · Frontend Engineering</p>
+      <p className="mt-2 text-base text-muted">{siteDetails.title}</p>
       <p className="mt-4 max-w-[68ch] text-base leading-relaxed text-muted">
-        I build fast, reliable web and mobile interfaces with React, Next.js and
-        TypeScript, and I&apos;m looking for tech lead or solutions engineering
-        roles where I can pair that depth with customer-facing ownership.
+        I build fast, reliable web and mobile interfaces with React, Next.js, and
+        TypeScript — and I&apos;m looking for senior frontend engineer or solutions
+        engineering roles where I can pair that depth with customer-facing ownership.
       </p>
 
       <div className="mt-6 flex flex-wrap gap-3">
