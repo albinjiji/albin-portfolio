@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { siteDetails } from "../lib/site";
+import ThemeToggle from "./ThemeToggle";
 import { navValues, contactValues } from "../constants/constants";
 
 const links = [
@@ -71,13 +72,18 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-4 md:flex">
+          <ThemeToggle />
           <a href={siteDetails.resumeUrl} target="_blank" rel="noreferrer" className="text-sm link-accent">
             {contactValues.resume}
           </a>
         </div>
 
+        <div className="flex items-center md:hidden">
+
+        <ThemeToggle />
+
         <button
-          className="inline-flex h-11 w-11 flex-col items-center justify-center gap-[5px] md:hidden"
+          className="inline-flex h-11 w-11 flex-col items-center justify-center gap-[5px]"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle navigation menu"
           aria-expanded={open}
@@ -86,6 +92,7 @@ export default function Navbar() {
           <span className={`h-[2px] w-5 bg-[var(--text)] transition-opacity ${open ? "opacity-0" : ""}`} />
           <span className={`h-[2px] w-5 bg-[var(--text)] transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
         </button>
+        </div>
       </nav>
 
       {open && (
