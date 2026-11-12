@@ -93,6 +93,15 @@ export const siteDetails = {
             ],
         }
     ],
+	openSource: [
+		{
+			project: { label: "Material UI", url: "https://github.com/mui/material-ui" },
+			contribution: { label: "[SpeedDial] Use useId for generated DOM ids", url: "https://github.com/mui/material-ui/pull/49729" },
+			description:
+				"Fixed duplicate DOM ids and ambiguous aria-controls when multiple SpeedDials share an ariaLabel. Agreed the API direction with a maintainer first, implemented the fix with React useId, added regression tests (unique ids, ARIA references, SSR hydration), and updated the TypeScript types, API docs and v10 migration guide. Merged by a Material UI maintainer.",
+			tech: "React, TypeScript, Accessibility, Testing",
+		},
+	],
 	education: [
 		{
 			degree: 'MCA',

@@ -18,6 +18,7 @@ export const navValues = {
     education: 'Education',
     experience: 'Experience',
     home: 'Home',
+    openSource: 'Open Source',
     projects: 'Projects',
     skills: 'Skills',
 };

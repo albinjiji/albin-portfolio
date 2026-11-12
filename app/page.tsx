@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import OpenSource from "./components/OpenSource";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <Skills />
         <Experience />
         <Projects />
+        <OpenSource />
         <Education />
         <Contact />
       </main>

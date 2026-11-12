@@ -8,6 +8,7 @@ const links = [
   { href: "#about", label: navValues.about, id: "about" },
   { href: "#experience", label: navValues.experience, id: "experience" },
   { href: "#projects", label: navValues.projects, id: "projects" },
+  { href: "#open-source", label: navValues.openSource, id: "open-source" },
   { href: "#contact", label: navValues.contact, id: "contact" },
 ];
 
